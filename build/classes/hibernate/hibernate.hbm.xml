@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    
+    <class name="hibernate.dao.Pytanie" table="PYTANIE">
+        
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+        
+        <property name="kategoria" column="KATEGORIA" type="string"/>
+        <property name="odpowiedz" column="ODPOWIEDZ" type="string"/>
+        <property name="podpowiedz" column="PODPOWIEDZ" type="string"/>
+        
+    </class>
+    
+    <class name="hibernate.dao.Wyniki" table="WYNIKI">
+        
+        <id name="id" column="ID" type="integer">
+            <generator class="increment"/>
+        </id>
+        
+        <property name="imie" column="IMIE" type="string"/>
+        <property name="punkty" column="PUNKTY" type="integer"/>
+        
+    </class>
+    
+    
+</hibernate-mapping>
